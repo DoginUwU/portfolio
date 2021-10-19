@@ -12,6 +12,7 @@
   --gray-900: #111111;
   --text-secondary: #9b9b9b;
   --blue: #0066ff;
+  --blue-dark: #0044cc;
 }
 
 @media (max-width: 1000px) {
