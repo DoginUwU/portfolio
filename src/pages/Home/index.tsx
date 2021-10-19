@@ -11,12 +11,12 @@ import { GoToTop } from "./styles";
 
 const Home = () => {
   const { loading } = useBedroom();
-  const isTop = !useOffsetTop(0);
+  const isTop = useOffsetTop(100);
 
   return (
     <>
       <div id="home" />
-      <Start />
+      <Start isOnTop={isTop} />
       {!loading && (
         <>
           <AboutMe />
@@ -26,7 +26,7 @@ const Home = () => {
           <Contacts />
         </>
       )}
-      <GoToTop isVisible={!isTop} to="home" spy smooth>
+      <GoToTop isVisible={isTop} to="home" spy smooth>
         <Icon icon="akar-icons:chevron-up" />
       </GoToTop>
     </>
