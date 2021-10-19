@@ -1,6 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 
+interface PopupContainerProps {
+  isOpen: boolean;
+  x: number;
+  y: number;
+}
+
 const HomeContainer = styled.div`
   position: absolute;
   top: 0;
@@ -70,4 +76,22 @@ const ScrollDownContainer = styled.div`
   }
 `;
 
-export { HomeContainer, CanvasContainer, ScrollDownContainer };
+const PopupContainer = styled.div<PopupContainerProps>`
+  position: absolute;
+  top: ${(props) => props.x}px;
+  left: ${(props) => props.y}px;
+  z-index: 999;
+  background-color: #fff;
+  visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  transition: all 0.2s;
+  border-radius: 0.75em;
+  padding: 1em;
+
+  h1 {
+    font-size: 1.5em;
+    color: #38e2b3;
+  }
+`;
+
+export { HomeContainer, CanvasContainer, ScrollDownContainer, PopupContainer };
