@@ -25,8 +25,6 @@ const HomeCanvas = () => {
     if (intersects.length > 0) {
       if (intersects[0].object.name.includes("Icosphere006")) {
         setName("Earth");
-      } else if (intersects[0].object.name.includes("Icosphere001")) {
-        setName("Cloud");
       } else if (intersects[0].object.name.includes("Cube001")) {
         setName("Building");
       } else {
