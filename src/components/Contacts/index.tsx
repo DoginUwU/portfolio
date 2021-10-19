@@ -12,6 +12,7 @@ import {
 } from "./styles";
 import toast from "react-hot-toast";
 import { Icon } from "@iconify/react";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 interface ContactForm {
   user_name: string;
@@ -69,8 +70,8 @@ const Contacts = () => {
   };
 
   const handleDiscord = () => {
-    toast.success("Dogs ♡#0172", {
-      icon: <Icon icon="bx:bxl-discord-alt" fontSize={20} />,
+    toast.success("Copiado para a área de transferência!", {
+      icon: "🐶",
       duration: 5000,
     });
   };
@@ -122,9 +123,11 @@ const Contacts = () => {
             >
               <Icon icon="ic:baseline-email" />
             </a>
-            <div onClick={handleDiscord}>
-              <Icon icon="bx:bxl-discord-alt" />
-            </div>
+            <CopyToClipboard text="Dogs ♡#0172" onCopy={handleDiscord}>
+              <div>
+                <Icon icon="bx:bxl-discord-alt" />
+              </div>
+            </CopyToClipboard>
           </BadgesContainer>
         </InputsContainer>
       </ContactContainer>
