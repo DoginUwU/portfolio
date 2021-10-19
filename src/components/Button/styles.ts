@@ -12,17 +12,8 @@ const Container = styled.button`
   justify-content: center;
   transition: all 0.2s ease-in-out;
 
-  svg {
-    margin-left: 0.5em;
-    transition: all 0.2s ease-in-out;
-  }
-
   &:hover {
     opacity: 0.9;
-
-    svg {
-      transform: translateX(0.5em);
-    }
   }
 `;
 
