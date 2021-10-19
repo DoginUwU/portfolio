@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import Bedroom from "../../components/Bedroom";
 import Button from "../../components/Button";
 import HomeCanvas from "../../components/HomeCanvas";
+import useOffsetTop from "../../hooks/useOffSetTop";
 import { useEarth } from "../../stores";
 import {
   CanvasContainer,
@@ -15,6 +16,7 @@ import {
 const Start = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const { setCoords, focus } = useEarth();
+  const offset = useOffsetTop(0);
 
   const onMouseDown = (event: any) => {
     event.preventDefault();
@@ -35,7 +37,7 @@ const Start = () => {
       <CanvasContainer>
         <HomeCanvas />
       </CanvasContainer>
-      <PopupContainer isOpen={focus} x={mousePos.x} y={mousePos.y}>
+      <PopupContainer isOpen={!offset && focus} x={mousePos.x} y={mousePos.y}>
         <h1>Earth</h1>
       </PopupContainer>
       <HomeContainer onMouseDown={onMouseDown}>

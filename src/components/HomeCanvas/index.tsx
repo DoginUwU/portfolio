@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PerspectiveCamera, useFBX } from "@react-three/drei";
 import Animate from "../../components/Animate";
-import useWindowDimensions from "../../utils/useWindowDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useThree } from "@react-three/fiber";
 import { useEarth } from "../../stores";
 
