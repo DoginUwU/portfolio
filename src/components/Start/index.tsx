@@ -18,7 +18,7 @@ interface StartProps {
 
 const Start = ({ isOnTop }: StartProps) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const { setCoords, focus } = useEarth();
+  const { setCoords, focus, name } = useEarth();
 
   const onMouseDown = (event: any) => {
     event.preventDefault();
@@ -40,7 +40,7 @@ const Start = ({ isOnTop }: StartProps) => {
         <HomeCanvas />
       </CanvasContainer>
       <PopupContainer isOpen={!isOnTop && focus} x={mousePos.x} y={mousePos.y}>
-        <h1>Earth</h1>
+        <h1>{name}</h1>
       </PopupContainer>
       <HomeContainer onMouseDown={onMouseDown}>
         <h1>Luiz Eduardo</h1>
