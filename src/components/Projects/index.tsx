@@ -34,7 +34,7 @@ const Projects = () => {
     <Container id="projects">
       <Title>Projetos</Title>
       <ProjectsContainer>
-        {projects.slice(0, 4).map((project) => {
+        {projects.slice(0, 5).map((project) => {
           const { data } = project;
 
           return (
