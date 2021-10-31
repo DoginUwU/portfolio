@@ -18,6 +18,7 @@ const HomeCanvas = () => {
     if (!earth.current) return;
 
     earth.current.position.x = 180 * (width / 1920);
+    setFocus(false)
   }, [width]);
 
   useMemo(() => {
