@@ -92,6 +92,10 @@ const PopupContainer = styled.div<PopupContainerProps>`
     font-size: 1.5em;
     color: #38e2b3;
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export { HomeContainer, CanvasContainer, ScrollDownContainer, PopupContainer };
