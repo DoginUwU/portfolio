@@ -18,7 +18,11 @@ const Projects = () => {
         Prismic.Predicates.at("document.type", "project")
       );
       if (response) {
-        setProjects(response.results);
+        console.log(response.results);
+        const results = response.results.sort((a, b) => {
+          return new Date(b.data.time).getTime() - new Date(a.data.time).getTime();
+        });
+        setProjects(results);
       }
     };
     fetchData();
