@@ -4,6 +4,7 @@ const Container = styled.h1`
   font-size: 3em;
   position: relative;
   padding: 0.5em;
+  font-family: "Raleway", sans-serif;
 
   &::before {
     content: "";

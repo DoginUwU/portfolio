@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import toast from "react-hot-toast";
 import Button from "../Button";
 import Title from "../Title";
@@ -14,20 +15,24 @@ const AboutMe = () => {
     <Container id="about-me">
       <Title>Sobre mim</Title>
       <p>
-        Olá, sou o Luiz, um apaixonado desenvolvedor web front-end e freelancer
-        brasileiro. Minha paixão por software é sonhar com ideias e torná-las
-        realidade com interfaces elegantes. Tenho muito cuidado com a
-        experiência, arquitetura e qualidade do código das coisas que construo.
+        Olá, sou o Luiz, um apaixonado desenvolvedor web especializado em front
+        end que além disso, trabalha como freelancer no Brasil. Minha paixão por
+        software vem de sonhar com criativas ideias e transformá-las em
+        realidade por meio de interfaces funcionais e elegantes.
       </p>
       <p>
-        Agora tento sempre me dedicar o máximo possível em criar um produto de
-        qualidade e fidelidade nas quais são me passado, além de ir aprendendo
-        sempre coisas novas ao longo dessa jornada. Sou bem disposto em ajudar
-        qualquer um que precise e estou sempre em busca de novos desafios para
-        me aprimorar.
+        Procuro sempre me dedicar o máximo em criar produtos de qualidade com
+        alta fidelidade segunda a proposta definida. Estou sempre disposto a
+        aprender novas tecnologias assim como ajudar qualquer pessoa que precise
+        de orientação com o conhecimento adquirido em minha jornada até agora.
       </p>
-
-      <Button onClick={() => handleCV()}>Baixar CV</Button>
+      <p>Desafios são sempre bem-vindos. Aprimoramento é lei.</p>
+      <Button onClick={() => handleCV()}>
+        Baixar CV
+        <Icon
+          icon="bx:bxs-cloud-download"
+        />
+      </Button>
       <Circle />
     </Container>
   );

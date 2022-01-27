@@ -10,7 +10,12 @@ const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5em;
   transition: all 0.2s ease-in-out;
+
+  svg {
+    font-size: 20px;
+  }
 
   &:hover {
     opacity: 0.9;
