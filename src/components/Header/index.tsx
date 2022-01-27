@@ -7,7 +7,7 @@ const Header = () => {
         Inicio
       </HeaderItem>
       <HeaderItem to="about-me" spy smooth>
-        Sobre mim
+        Sobre
       </HeaderItem>
       <HeaderItem to="skills" spy smooth>
         Habilidades
