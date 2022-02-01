@@ -13,7 +13,7 @@ const BedroomContainer = styled.div<BedroomContainerProps>`
   opacity: ${(props) => (props.visible ? 1 : 0)};
   transition: all 0.2s;
   background: var(--gray-900);
-  z-index: 9999;
+  z-index: 0;
 `;
 
 export { BedroomContainer };

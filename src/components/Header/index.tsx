@@ -1,21 +1,42 @@
+import { useHistory, useLocation } from "react-router-dom";
 import { HeaderContainer, HeaderItem } from "./styles";
 
 const Header = () => {
+  const { pathname } = useLocation();
+  const history = useHistory();
+
+  const handleClick = (name: string) => { 
+    if (pathname !== "/") {
+      history.push(name);
+    }
+  }
+
   return (
     <HeaderContainer>
-      <HeaderItem to="home" spy smooth>
+      <HeaderItem to="home" spy smooth onClick={() => handleClick("/")}>
         Inicio
       </HeaderItem>
-      <HeaderItem to="about-me" spy smooth>
+      <HeaderItem to="about-me" spy smooth onClick={() => handleClick("/")}>
         Sobre
       </HeaderItem>
-      <HeaderItem to="skills" spy smooth>
+      <HeaderItem to="skills" spy smooth onClick={() => handleClick("/")}>
         Habilidades
       </HeaderItem>
-      <HeaderItem to="projects" spy smooth>
+      <HeaderItem
+        to="projects"
+        spy
+        smooth
+        onClick={() => handleClick("/projects")}
+      >
         Projetos
       </HeaderItem>
-      <HeaderItem to="contacts" spy smooth important>
+      <HeaderItem
+        to="contacts"
+        spy
+        smooth
+        important
+        onClick={() => handleClick("/")}
+      >
         Contato
       </HeaderItem>
     </HeaderContainer>

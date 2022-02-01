@@ -1,37 +1,27 @@
 import { useEffect, useState } from "react";
-import Prismic from "@prismicio/client";
+import { useHistory } from "react-router-dom";
 import { Document } from "@prismicio/client/types/documents";
-import Client from "../../utils/prismic";
 import Button from "../Button";
 import Title from "../Title";
 
 import { Circle, Container, ProjectItem, ProjectsContainer } from "./styles";
 import { RichText } from "prismic-reactjs";
-import toast from "react-hot-toast";
+import { getAllProjects } from "../../services/prismic";
 
 const Projects = () => {
+  const history = useHistory();
   const [projects, setProjects] = useState<Document[]>([]);
 
+   const getProjects = async () => {
+    setProjects(await getAllProjects());
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await Client.query(
-        Prismic.Predicates.at("document.type", "project")
-      );
-      if (response) {
-        const results = response.results.sort((a, b) => {
-          // @ts-ignore
-          return new Date(b.data.time).getTime() - new Date(a.data.time).getTime();
-        });
-        setProjects(results);
-      }
-    };
-    fetchData();
+    getProjects();
   }, []);
 
   const handleOpenProjects = () => {
-    toast.error("Em progresso...", {
-      icon: "⛔",
-    });
+    history.push("/projects");
   };
 
   return (

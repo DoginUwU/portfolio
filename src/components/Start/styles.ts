@@ -48,6 +48,12 @@ const HomeContainer = styled.div`
   @media (max-width: 930px) {
     padding: 5em;
   }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 `;
 
 const CanvasContainer = styled(Canvas)`

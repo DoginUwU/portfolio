@@ -61,11 +61,10 @@ a {
   height: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-500);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--gray-900);
+  background: transparent;
   border-radius: 10px;
-  box-shadow: inset 7px 10px 12px 0px var(--gray-900);
 }

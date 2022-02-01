@@ -45,9 +45,14 @@ const Start = ({ isOnTop }: StartProps) => {
       <HomeContainer onMouseDown={onMouseDown}>
         <h1>Luiz Eduardo</h1>
         <p>Front-end Developer</p>
-        <Link to="contacts" spy smooth>
-          <Button>Fale comigo</Button>
-        </Link>
+        <div className="contacts">
+          <Link to="contacts" spy smooth>
+            <Button>Fale comigo</Button>
+          </Link>
+          <Link to="projects" spy smooth>
+            <Button>Projetos</Button>
+          </Link>
+        </div>
       </HomeContainer>
       <ScrollDownContainer>
         <Icon icon="clarity:mouse-line" />
