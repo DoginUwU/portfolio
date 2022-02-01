@@ -1,12 +1,15 @@
 import { Icon } from "@iconify/react";
-import AboutMe from "../../components/AboutMe";
-import Contacts from "../../components/Contacts";
-import Projects from "../../components/Projects";
-import Skills from "../../components/Skills";
-import Start from "../../components/Start";
-import Tools from "../../components/Tools";
+import { lazy } from "react";
+
 import useOffsetTop from "../../hooks/useOffSetTop";
 import { GoToTop } from "./styles";
+
+const AboutMe = lazy(() => import("../../components/AboutMe"));
+const Contacts = lazy(() => import("../../components/Contacts"));
+const Projects = lazy(() => import("../../components/Projects"));
+const Skills = lazy(() => import("../../components/Skills"));
+const Start = lazy(() => import("../../components/Start"));
+const Tools = lazy(() => import("../../components/Tools"));
 
 const Home = () => {
   const isTop = useOffsetTop(100);
