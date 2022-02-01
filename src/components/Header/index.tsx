@@ -23,10 +23,10 @@ const Header = () => {
         Habilidades
       </HeaderItem>
       <HeaderItem
-        to="projects"
+        to=""
         spy
         smooth
-        onClick={() => handleClick("/projects")}
+        onClick={() => history.push("/projects")}
       >
         Projetos
       </HeaderItem>

@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import Bedroom from "../../components/Bedroom";
 import Button from "../../components/Button";
 import HomeCanvas from "../../components/HomeCanvas";
 import { useEarth } from "../../stores";
@@ -35,7 +34,6 @@ const Start = ({ isOnTop }: StartProps) => {
 
   return (
     <>
-      <Bedroom />
       <CanvasContainer>
         <HomeCanvas />
       </CanvasContainer>
