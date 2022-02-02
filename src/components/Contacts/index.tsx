@@ -105,21 +105,24 @@ const Contacts = () => {
             <a
               href="https://github.com/DoginUwU"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              title="GitHub"
             >
               <Icon icon="akar-icons:github-fill" />
             </a>
             <a
               href="https://www.linkedin.com/in/luiz-gotardo/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              title="LinkedIn"
             >
               <Icon icon="akar-icons:linkedin-fill" />
             </a>
             <a
               href="mailto:doginuwu@gmail.com"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              title="Email"
             >
               <Icon icon="ic:baseline-email" />
             </a>
