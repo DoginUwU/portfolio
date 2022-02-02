@@ -19,16 +19,14 @@ const Header = () => {
       <HeaderItem to="about-me" spy smooth onClick={() => handleClick("/")}>
         Sobre
       </HeaderItem>
-      <HeaderItem to="skills" spy smooth onClick={() => handleClick("/")}>
+      <HeaderItem to="skills" spy smooth onClick={() => handleClick("/")} className="skills">
         Habilidades
       </HeaderItem>
-      <HeaderItem
-        to=""
-        spy
-        smooth
-        onClick={() => history.push("/projects")}
-      >
+      <HeaderItem to="" onClick={() => history.push("/projects")}>
         Projetos
+      </HeaderItem>
+      <HeaderItem to="" onClick={() => history.push("/blog")}>
+        Blog
       </HeaderItem>
       <HeaderItem
         to="contacts"

@@ -65,23 +65,6 @@ const CanvasContainer = styled(Canvas)`
   z-index: -1;
 `;
 
-const ScrollDownContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.9;
-
-  svg {
-    width: 2em;
-    height: 2em;
-    margin-right: 0.5em;
-  }
-`;
-
 const PopupContainer = styled.div<PopupContainerProps>`
   position: absolute;
   top: ${(props) => props.x}px;
@@ -104,4 +87,4 @@ const PopupContainer = styled.div<PopupContainerProps>`
   }
 `;
 
-export { HomeContainer, CanvasContainer, ScrollDownContainer, PopupContainer };
+export { HomeContainer, CanvasContainer, PopupContainer };

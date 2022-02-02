@@ -5,6 +5,7 @@ const Container = styled.div`
   position: relative;
   padding-bottom: 3em;
   text-align: center;
+  text-shadow: 2px 2px 2px black;
 `;
 
 export { Container };

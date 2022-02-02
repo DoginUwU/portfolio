@@ -2,7 +2,7 @@ import { Container } from "./styles";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="footer">
       Made with ❤️ by <a href="https://github.com/DoginUwU">Luiz Eduardo</a>
     </Container>
   );

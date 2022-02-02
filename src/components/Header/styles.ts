@@ -44,6 +44,10 @@ const HeaderItem = styled(ScrollLink)<HeaderItemProps>`
 
   @media (max-width: 430px) {
     padding: 0.5em;
+
+    &.skills {
+      display: none;
+    }
   }
 `;
 

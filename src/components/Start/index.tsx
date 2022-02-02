@@ -1,14 +1,13 @@
-import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import Button from "../../components/Button";
 import HomeCanvas from "../../components/HomeCanvas";
 import { useEarth } from "../../stores";
+import ScrollDown from "../ScrollDown";
 import {
   CanvasContainer,
   HomeContainer,
-  PopupContainer,
-  ScrollDownContainer,
+  PopupContainer
 } from "./styles";
 
 interface StartProps {
@@ -47,10 +46,7 @@ const Start = ({ isOnTop }: StartProps) => {
           <Button>Fale comigo</Button>
         </Link>
       </HomeContainer>
-      <ScrollDownContainer>
-        <Icon icon="clarity:mouse-line" />
-        Rolar para baixo
-      </ScrollDownContainer>
+      <ScrollDown />
     </>
   );
 };
