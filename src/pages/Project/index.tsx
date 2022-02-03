@@ -1,7 +1,6 @@
 import { usePrismicDocumentByUID } from '@prismicio/react';
 import { RichText } from 'prismic-reactjs';
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button';
 

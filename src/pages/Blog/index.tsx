@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from "@iconify/react";
 import ParallaxMousemove from "react-parallax-mousemove";
 
-import { Start, Container, Banner, Documents, Document, Background } from "./styles";
+import { Start, Container, Banner, Documents, Background } from "./styles";
 import ScrollDown from '../../components/ScrollDown';
 
 const Blog: React.FC = () => {
