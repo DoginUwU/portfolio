@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <Container id="projects">
-      <Title>Projetos</Title>
+      <Title>Projects</Title>
       <ProjectsContainer>
         {projects.slice(0, 5).map((project) => {
           const { data } = project;
@@ -41,7 +41,7 @@ const Projects = () => {
           );
         })}
       </ProjectsContainer>
-      <Button onClick={handleOpenProjects}>Ver todos</Button>
+      <Button onClick={handleOpenProjects}>View more</Button>
       <Circle />
     </Container>
   );

@@ -43,7 +43,7 @@ const Start = ({ isOnTop }: StartProps) => {
         <h1>Luiz Eduardo</h1>
         <p>Front-end Developer</p>
         <Link to="contacts" spy smooth>
-          <Button>Fale comigo</Button>
+          <Button>Contact-me</Button>
         </Link>
       </HomeContainer>
       <ScrollDown />

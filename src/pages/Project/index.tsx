@@ -23,7 +23,7 @@ const Project: React.FC = () => {
           <h1>{RichText.asText(data.title)}</h1>
           <p>{RichText.asText(data.short_description)}</p>
           <a href={data.link} target="_blank" rel="noreferrer">
-            <Button disabled={!data.link}>Visitar</Button>
+            <Button disabled={!data.link}>Open</Button>
           </a>
         </Card>
       </HeaderContainer>

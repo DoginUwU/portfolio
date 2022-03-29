@@ -25,7 +25,7 @@ const Portfolio: React.FC = () => {
     return (
       <Container>
         <Banner>
-          <h1>Meus projetos até o momento</h1>
+          <h1>My projects at moment</h1>
           <Computer>
             <div className="header">
               <div className="circle red" />

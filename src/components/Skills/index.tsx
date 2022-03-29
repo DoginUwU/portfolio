@@ -7,7 +7,7 @@ import { Container, ItemsContainer } from "./styles";
 const Skills = () => {
   return (
     <Container id="skills">
-      <Title>Habilidades</Title>
+      <Title>Skills</Title>
       <ItemsContainer>
         {ITEMS.map((item, index) => (
           <BadgeItem

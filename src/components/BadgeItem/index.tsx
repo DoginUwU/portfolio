@@ -23,7 +23,7 @@ const BadgeItem = ({
       {hasProgressBar && (
         <Duration>
           <p>
-            {duration} ano{duration > 1 && "s"}
+            {duration} year{duration > 1 && "s"}
           </p>
           <ProgressBar progress={(duration / 5) * 100} />
         </Duration>

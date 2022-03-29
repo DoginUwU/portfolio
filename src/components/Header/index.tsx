@@ -14,20 +14,20 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderItem to="home" spy smooth onClick={() => handleClick("/")}>
-        Inicio
+        Home
       </HeaderItem>
       <HeaderItem to="about-me" spy smooth onClick={() => handleClick("/")}>
-        Sobre
+        About
       </HeaderItem>
       <HeaderItem to="skills" spy smooth onClick={() => handleClick("/")} className="skills">
-        Habilidades
+        Skills
       </HeaderItem>
       <HeaderItem to="" onClick={() => history.push("/projects")}>
-        Projetos
+        Projects
       </HeaderItem>
-      <HeaderItem to="" onClick={() => history.push("/blog")}>
+      {/* <HeaderItem to="" onClick={() => history.push("/blog")}>
         Blog
-      </HeaderItem>
+      </HeaderItem> */}
       <HeaderItem
         to="contacts"
         spy
@@ -35,7 +35,7 @@ const Header = () => {
         important
         onClick={() => handleClick("/")}
       >
-        Contato
+        Contact
       </HeaderItem>
     </HeaderContainer>
   );

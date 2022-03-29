@@ -104,7 +104,6 @@ const BadgesContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s;
     cursor: pointer;
     background-color: var(--blue);
     color: #fff;
@@ -112,10 +111,6 @@ const BadgesContainer = styled.div`
     svg {
       width: 1.6em;
       height: 1.6em;
-    }
-
-    &:hover {
-      transform: translateY(-0.5em);
     }
   }
 

@@ -48,14 +48,14 @@ const Contacts = () => {
       .then(
         () => {
           toast.success(
-            "Seu email foi enviado com sucesso... Irei te chamar em breve!",
+            "Succefully sended!",
             {
               icon: "✅",
             }
           );
         },
         () => {
-          toast.error("Não foi possível enviar seu email", {
+          toast.error("Opps! An error has occurred", {
             icon: "⛔",
           });
         }
@@ -64,13 +64,13 @@ const Contacts = () => {
   };
 
   const errorEmail = () => {
-    toast.error("Campos faltando.", {
+    toast.error("Missing datas.", {
       icon: "⛔",
     });
   };
 
   const handleDiscord = () => {
-    toast.success("Copiado para a área de transferência!", {
+    toast.success("Copied to clipboard!", {
       icon: "🐶",
       duration: 5000,
     });
@@ -85,7 +85,7 @@ const Contacts = () => {
           <form onSubmit={handleSubmit(sendEmail, errorEmail)}>
             <input
               type="text"
-              placeholder="Nome completo"
+              placeholder="Full name"
               {...register("user_name", { required: true })}
             />
             <input
@@ -95,12 +95,12 @@ const Contacts = () => {
             />
             <input
               type="text"
-              placeholder="Mensagem"
+              placeholder="Message"
               {...register("message", { required: true })}
             />
-            <Button type="submit">Enviar</Button>
+            <Button type="submit">Send</Button>
           </form>
-          <p className="or">Ou</p>
+          <p className="or">Or</p>
           <BadgesContainer>
             <a
               href="https://github.com/DoginUwU"

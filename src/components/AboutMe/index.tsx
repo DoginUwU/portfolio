@@ -13,22 +13,16 @@ const AboutMe = () => {
 
   return (
     <Container id="about-me">
-      <Title>Sobre mim</Title>
+      <Title>About Me</Title>
       <p>
-        Olá, sou o Luiz, um apaixonado desenvolvedor web especializado em front
-        end que além disso, trabalha como freelancer no Brasil. Minha paixão por
-        software vem de sonhar com criativas ideias e transformá-las em
-        realidade por meio de interfaces funcionais e elegantes.
+        I'm Luiz Eduardo, a passionate self-taught Front-end web developer and a freelance from Brazil. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.
       </p>
       <p>
-        Procuro sempre me dedicar o máximo em criar produtos de qualidade com
-        alta fidelidade segunda a proposta definida. Estou sempre disposto a
-        aprender novas tecnologias assim como ajudar qualquer pessoa que precise
-        de orientação com o conhecimento adquirido em minha jornada até agora.
+        I try to always dedicate myself to the maximum in creating quality products with high fidelity according to the defined proposal. I'm always willing to learn new technologies as well as help anyone in need of guidance with the knowledge gained on my journey so far.
       </p>
-      <p>Desafios são sempre bem-vindos. Aprimoramento é lei.</p>
+      <p>Challenges are always welcome. improvement is required.</p>
       <Button onClick={() => handleCV()}>
-        Baixar CV
+        Download CV
         <Icon
           icon="bx:bxs-cloud-download"
         />
