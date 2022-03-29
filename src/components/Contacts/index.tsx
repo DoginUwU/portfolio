@@ -78,7 +78,7 @@ const Contacts = () => {
 
   return (
     <Container id="contacts">
-      <Title>Contatos</Title>
+      <Title>Contacts</Title>
       <ContactContainer>
         <div id="computer_image" />
         <InputsContainer>
@@ -126,7 +126,7 @@ const Contacts = () => {
             >
               <Icon icon="ic:baseline-email" />
             </a>
-            <CopyToClipboard text="Dogs ♡#0172" onCopy={handleDiscord}>
+            <CopyToClipboard text="Dogs ♡#0050" onCopy={handleDiscord}>
               <div>
                 <Icon icon="bx:bxl-discord-alt" />
               </div>

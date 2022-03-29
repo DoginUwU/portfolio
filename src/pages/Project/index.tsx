@@ -7,11 +7,12 @@ import Button from '../../components/Button';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Container, HeaderContainer, Card } from "./styles";
+import Loading from '../../components/Loading';
 
 const Project: React.FC = () => {
   const { uid } = useParams<any>();
   const [document] = usePrismicDocumentByUID("project", uid);
-  if (!document) return null;
+  if (!document) return Loading;
   
   const { data }: any = document;
 

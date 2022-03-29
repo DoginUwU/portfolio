@@ -7,7 +7,7 @@ import { Container, ItemsContainer } from "./styles";
 const Tools = () => {
   return (
     <Container>
-      <Title>Tools</Title>
+      <Title>Tools/Aplications</Title>
       <ItemsContainer>
         {ITEMS.map((item, index) => (
           <BadgeItem
