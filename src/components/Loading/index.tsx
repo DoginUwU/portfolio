@@ -1,10 +1,20 @@
 
 import { Container } from './styles';
 
-const Loading: React.FC = () => {
-    return (
-        <Loading><h1>Loading... Please wait</h1></Loading>
-    )
+interface LoadingProps {
+    isLoading?: boolean;
 }
+
+const Loading: React.FC<LoadingProps> = ({ isLoading, children }) => {
+    return isLoading ? (
+      <Container>
+        <h1>Loading... Please wait</h1>
+      </Container>
+    ) : (
+            <>
+                {children}
+            </>
+    );
+};
 
 export default Loading;

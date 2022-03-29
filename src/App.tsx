@@ -10,7 +10,7 @@ import Client from "./utils/prismic";
 
 function App() {
   return (
-    <Suspense fallback={<SuspenseContainer>Aguarde...</SuspenseContainer>}>
+    <Suspense fallback={<SuspenseContainer>Loading...</SuspenseContainer>}>
       <PrismicProvider client={Client}>
         <Header />
         <Routes />
