@@ -18,9 +18,9 @@ const Portfolio: React.FC = () => {
     getProjects();
   }, []);
 
-    const handleProject = (id?: string) => {
-        history.push(`/project/${id}`);
-    }
+    // const handleProject = (id?: string) => {
+    //     history.push(`/project/${id}`);
+    // }
 
     return (
       <Container>
@@ -45,12 +45,14 @@ const Portfolio: React.FC = () => {
         <Projects>
                 {projects.map((project) => {
                     const { data, uid } = project;
-                    return (
-                      <Project key={uid} onClick={() => handleProject(uid)}>
+                  return (
+                    <a href={data.link} target="_blank" rel="noreferrer">
+                      <Project key={uid}>
                         <img src={data["main-image"].url} alt="Project name" />
                         <div className="card" />
                       </Project>
-                    );
+                    </a>
+                  );
                 })}
             </Projects>
       </Container>

@@ -12,7 +12,7 @@ import Loading from '../../components/Loading';
 const Project: React.FC = () => {
   const { uid } = useParams<any>();
   const [document] = usePrismicDocumentByUID("project", uid);
-  if (!document) return <Loading isLoading={true} />;
+  if (!document) return <Loading isLoading />;
   
   const { data }: any = document;
 
